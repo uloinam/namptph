@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.khung{
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: var(--color5);
+}
+.Menu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color3);
+}
+.Menu ul{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.Menu ul li:hover{
+    background-color: var(--color4); 
+}
+.Menu li{
+    list-style: none;
+    height: auto;
+}
+
+.Menu li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color1);
+}
+.Menu img{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+.noiDung{
+    width: 100%;
+    height: auto;
+    background-color: var(--color5);
+    text-align: center;
+}
+.noiDung h1{
+    color: var(--color6);
+    font-size: 40px;
+    padding-top: 20px;
+}
+.suKien{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.thumbail{
+    width: 30%;
+    border: 1px solid var(--color7);
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+    background-color: var(--color2);
+}
+.thumbail h2{
+    color: var(--color6);
+    flex-shrink: 0;
+}
+.thumbail img{
+    width: 100%;
+    flex-shrink: 0;
+}
+hr{
+    border: 2px solid var(--color7);
+}
+.footer{
+    text-align: center;
+    color: var(--color1);
+}
+.doiTac img{
+    width: 100%;
+    flex-shrink: 1;
+}
+:root{
+    --color1: white;
+    --color2: black;
+    --color3: rgb(11, 11, 58);
+    --color4: rgb(55, 55, 236);
+    --color5: rgb(26, 3, 39);
+    --color6: rgb(185, 185, 144);
+    --color7: rgb(173, 173, 12);
+}
+
+@media screen and (max-width: 768px){
+    .thumbail{
+        width: calc(48% - 22px);
+    }
+}
+@media screen and (max-width: 480px){
+    .thumbail{
+        width: 100%;
+    }
+}

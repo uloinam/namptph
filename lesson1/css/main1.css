@@ -1,0 +1,44 @@
+.khung{
+    width: 100%;
+    
+}
+.cot{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto;
+    flex-wrap: wrap;
+    grid-gap: 40px;
+    padding: 10px;
+}
+.noiDung{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.noiDung img{
+    width: 100%;
+    flex-shrink: 0;
+}
+h3{
+    flex: 1;
+}
+.noiDung button{
+    border-radius: 5px 5px 7px;
+    border: none;
+    background-color: yellow;
+    padding: 10px 15px;
+    width: 100px;
+}
+@media screen and (max-width: 768px){
+    .noiDung{
+        width: calc(48% - 22px);
+    }
+}
+@media screen and (max-width: 480px){
+    .noiDung{
+        width: 100%;
+    }
+}
