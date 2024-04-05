@@ -78,6 +78,30 @@ h2 {
   width: 100%;
   flex-shrink: 1;
 }
+.Menu_Mobile{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  display: none;
+}
+.navmobile{
+  width: 100%;
+  height: 75px;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(76, 12, 88);
+  
+}
+
+.navmobile a{
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 25px;
+}
+.navmobile img{
+  width: 100%;
+  height: 50px;
+}
 :root {
   --color1: white;
   --color2: black;
@@ -93,12 +117,11 @@ h2 {
     flex-wrap: wrap;
     padding: 0;
   }
-  .Menu ul {
+  .Menu{
     display: none;
   }
-  .Menu a{
-      width: 100%;
-      text-align: center;
+  .Menu_Mobile{
+    display: flex;
   }
   .Menu img {
     width: 50%;
